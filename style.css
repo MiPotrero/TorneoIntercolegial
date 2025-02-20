@@ -25,6 +25,9 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
+    font-family: "Anton", serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 /* Imagen banner - Flexible para ser responsive */
