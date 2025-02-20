@@ -21,7 +21,7 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
@@ -105,7 +105,7 @@ ul li {
     }
 
     header {
-        font-size: 22px;
+        font-size: 32px;
     }
 
     .container {
