@@ -3,29 +3,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
+}
+
+/* Configuración básica para que todo sea responsive */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #0b6623;
     color: white;
+    line-height: 1.6;
 }
+
+/* Header - Flexbox para centrar el contenido */
 header {
-    height: 130px;
     background-color: #074d19;
     color: white;
     text-align: center;
-    padding: 40px;
-    font-size: 30px;
+    padding: 20px;
+    font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
+    position: relative;
 }
+
+/* Imagen banner - Flexible para ser responsive */
+.banner {
+    width: 100%; /* Ocupa el 100% del ancho */
+    max-width: 500px; /* Limita el ancho a 500px para no hacerlo demasiado grande */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+    border-radius: 10px;
+}
+
+/* Container de contenido */
 .container {
     max-width: 900px;
     margin: 20px auto;
-    padding: 30px;
+    padding: 20px;
     background: white;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
@@ -35,18 +51,24 @@ header {
     font-weight: 300;
     font-style: normal;
 }
+
+/* H2 - Títulos */
 h2 {
     color: #0b6623;
-    font-size: 40px;
+    font-size: 2rem;
     margin-bottom: 10px;
     border-bottom: 2px solid #0b6623;
     padding-bottom: 5px;
 }
+
+/* Párrafos */
 p {
-    font-size: 30px;
+    font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 15px;
 }
+
+/* Botón de inscripción */
 .button {
     display: inline-block;
     padding: 12px 24px;
@@ -55,31 +77,52 @@ p {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    font-size: 30px;
+    font-size: 1.2rem;
     transition: background 0.3s;
+    text-align: center;
 }
 .button:hover {
     background-color: #e6b800;
 }
-a{
-    margin-left: 40%;
-}
-.banner {
-    width: 150px;
-    height: auto;
-    position: absolute;
-    top: 15px;
-    left: 15px; /* O usa `0` si quieres que toque el borde */
-    border: 2px solid white; /* Para visualizar el borde */
-    border-radius: 10px; /* Opcional */
-}
+
+/* Estilo de la lista de premios */
 ul {
     list-style-type: none;
     padding: 0;
 }
 ul li {
-    font-size: 30px;
+    font-size: 1.2rem;
     padding: 8px 0;
 }
 
-  
+/* Media Query - Para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    header {
+        font-size: 22px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .banner {
+        width: 90%; /* Ajusta el tamaño de la imagen en dispositivos más pequeños */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
